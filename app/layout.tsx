@@ -14,7 +14,7 @@ export default async function RootLayout({
   });
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col min-h-screen">
         <header className="flex justify-between items-center p-4 border-b">
           <Link href="/">Vintage Store</Link>
           <nav>
@@ -28,7 +28,10 @@ export default async function RootLayout({
             )}
           </nav>
         </header>
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
+        <footer className="border-t p-4 text-center text-sm text-gray-500">
+          <p>© 2026 Vintage Store. Relive the classics.</p>
+        </footer>
       </body>
     </html>
   );
