@@ -38,7 +38,7 @@ export default function SignInPage() {
         className="border p-2 rounded"
         required
       />
-      <input type="text" name="test" id="test" placeholder="test" />
+      <input type="text" name="test" id="test" placeholder="test locotron" />
       <button type="submit" className="bg-black text-white p-2 rounded">
         Sign In
       </button>
